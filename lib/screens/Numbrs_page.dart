@@ -1,17 +1,26 @@
+// [Flutter]: material
 import 'package:flutter/material.dart';
 
-class NumbersPage extends StatelessWidget {
-  const NumbersPage({super.key});
+import 'package:toku/Components/item.dart';
+import 'package:toku/models/Number.dart';
 
+// ignore: must_be_immutable
+class NumbersPage extends StatelessWidget {
+  NumbersPage({super.key});
+  // ignore: non_constant_identifier_names
+  final Numbrs One = Numbrs(
+      image: 'assets/images/numbers/number_one.png',
+      jpName: 'Ichi',
+      enName: 'One');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff051525),
       appBar: AppBar(
-        shape: const Border(bottom: BorderSide(color: Colors.red, width: 0.5)),
+        shape: const Border(bottom: BorderSide(color: Colors.red, width: 1)),
         titleSpacing: 5,
         backgroundColor: const Color(0xff051525),
-        leading: BackButton(
+        leading: const BackButton(
           color: Colors.red,
         ),
         title: const Text(
@@ -38,6 +47,21 @@ class NumbersPage extends StatelessWidget {
             color: Colors.red,
           ),
         ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Item(number: One),
+            Item(number: One),
+            Item(number: One),
+            Item(number: One),
+            Item(number: One),
+            Item(number: One),
+            Item(number: One),
+            Item(number: One),
+            Item(number: One),
+          ],
+        ),
       ),
     );
   }
