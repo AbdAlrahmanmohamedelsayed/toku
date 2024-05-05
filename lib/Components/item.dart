@@ -1,10 +1,11 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:toku/Components/TextScreen.dart';
 import 'package:toku/models/Number.dart';
 
 class Item extends StatelessWidget {
-  Item({super.key, required this.number});
-  final Numbers number;
+  Item({super.key, required this.item});
+  final Numbers item;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,21 +19,24 @@ class Item extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 color: Colors.red.withOpacity(1),
-                border: Border.all(color: Colors.white54, width: 3)),
+                border: Border.all(color: Colors.white, width: 1)),
             child: Image.asset(
-              number.image,
-              width: 100,
+              item.image,
+              width: 130,
             ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextPages(number.jpName),
-              TextPages(number.enName),
+              TextPages(item.jpName),
+              TextPages(item.enName),
             ],
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              final player = AudioPlayer();
+              player.play(AssetSource(item.sound));
+            },
             icon: const Icon(
               Icons.play_arrow,
               color: Colors.red,

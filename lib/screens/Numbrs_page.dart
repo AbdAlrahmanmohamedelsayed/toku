@@ -10,45 +10,65 @@ class NumbersPage extends StatelessWidget {
   // ignore: non_constant_identifier_names
   final List<Numbers> num = [
     Numbers(
-        image: 'assets/images/numbers/number_one.png',
-        jpName: 'Ichi',
-        enName: 'One'),
+      image: 'assets/images/numbers/number_one.png',
+      jpName: 'Ichi',
+      enName: 'One',
+      sound: 'sounds/numbers/number_one_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_two.png',
-        jpName: 'Ni',
-        enName: 'Two'),
+      image: 'assets/images/numbers/number_two.png',
+      jpName: 'Ni',
+      enName: 'Two',
+      sound: 'sounds/numbers/number_two_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_three.png',
-        jpName: 'San',
-        enName: 'Three'),
+      image: 'assets/images/numbers/number_three.png',
+      jpName: 'San',
+      enName: 'Three',
+      sound: 'sounds/numbers/number_three_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_four.png',
-        jpName: 'Shi or Yon',
-        enName: 'Four'),
+      image: 'assets/images/numbers/number_four.png',
+      jpName: 'Shi or Yon',
+      enName: 'Four',
+      sound: 'sounds/numbers/number_four_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_five.png',
-        jpName: 'Go',
-        enName: 'Five'),
+      image: 'assets/images/numbers/number_five.png',
+      jpName: 'Go',
+      enName: 'Five',
+      sound: 'sounds/numbers/number_five_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_six.png',
-        jpName: 'Roku',
-        enName: 'Six'),
+      image: 'assets/images/numbers/number_six.png',
+      jpName: 'Roku',
+      enName: 'Six',
+      sound: 'sounds/numbers/number_six_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_seven.png',
-        jpName: 'Shichi or Nana',
-        enName: 'Seven'),
+      image: 'assets/images/numbers/number_seven.png',
+      jpName: 'Shichi or Nana',
+      enName: 'Seven',
+      sound: 'sounds/numbers/number_seven_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_eight.png',
-        jpName: 'Hachi',
-        enName: 'Eight'),
+      image: 'assets/images/numbers/number_eight.png',
+      jpName: 'Hachi',
+      enName: 'Eight',
+      sound: 'sounds/numbers/number_eight_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_nine.png',
-        jpName: 'Kyū or Ku',
-        enName: 'Nine'),
+      image: 'assets/images/numbers/number_nine.png',
+      jpName: 'Kyū or Ku',
+      enName: 'Nine',
+      sound: 'sounds/numbers/number_nine_sound.mp3',
+    ),
     Numbers(
-        image: 'assets/images/numbers/number_ten.png',
-        jpName: 'Jū',
-        enName: 'Ten'),
+      image: 'assets/images/numbers/number_ten.png',
+      jpName: 'Jū',
+      enName: 'Ten',
+      sound: 'sounds/numbers/number_ten_sound.mp3',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -89,7 +109,7 @@ class NumbersPage extends StatelessWidget {
         body: ListView.builder(
           itemCount: num.length,
           itemBuilder: (BuildContext context, int index) {
-            return Item(number: num[index]);
+            return Item(item: num[index]);
           },
         ));
   }
