@@ -63,6 +63,10 @@ flutter:
     - assets/images/
     - assets/images/numbers/
     - assets/sounds/numbers/
+    - assets/images/family_members/
+    - assets/sounds/family_members/
+    - assets/images/colors/
+    - assets/sounds/colors/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

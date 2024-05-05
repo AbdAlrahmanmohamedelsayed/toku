@@ -5,7 +5,7 @@ import 'package:toku/models/Number.dart';
 
 class Item extends StatelessWidget {
   Item({super.key, required this.item});
-  final Numbers item;
+  final Data item;
   @override
   Widget build(BuildContext context) {
     return Container(

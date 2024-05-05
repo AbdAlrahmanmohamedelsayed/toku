@@ -1,9 +1,9 @@
-class Numbers {
+class Data {
   final String image;
   final String jpName;
   final String enName;
   final String sound;
-  Numbers(
+  Data(
       {required this.image,
       required this.jpName,
       required this.enName,
