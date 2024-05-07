@@ -43,7 +43,7 @@ class ItemInfo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 10),
+            padding: const EdgeInsets.only(left: 5),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

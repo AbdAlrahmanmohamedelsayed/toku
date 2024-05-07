@@ -50,7 +50,7 @@ class PhrasesPage extends StatelessWidget {
     ),
     Data(
       enName: 'Don\'t Forget To subscribe',
-      jpName: 'Kōdoku suru koto o wasurenaide kudasai',
+      jpName: 'Kōdoku suru koto o wasurenaide ',
       sound: 'sounds/phrases/dont_forget_to_subscribe.wav',
     ),
   ];
