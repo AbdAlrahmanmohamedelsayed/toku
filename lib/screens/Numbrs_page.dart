@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:toku/Components/item.dart';
-import 'package:toku/models/Number.dart';
+import 'package:toku/models/Model_data.dart';
 
 // ignore: must_be_immutable
 class NumbersPage extends StatelessWidget {
@@ -29,7 +29,7 @@ class NumbersPage extends StatelessWidget {
     ),
     Data(
       image: 'assets/images/numbers/number_four.png',
-      jpName: 'Shi or Yon',
+      jpName: 'Shi ',
       enName: 'Four',
       sound: 'sounds/numbers/number_four_sound.mp3',
     ),
@@ -47,7 +47,7 @@ class NumbersPage extends StatelessWidget {
     ),
     Data(
       image: 'assets/images/numbers/number_seven.png',
-      jpName: 'Shichi or Nana',
+      jpName: 'Shichi',
       enName: 'Seven',
       sound: 'sounds/numbers/number_seven_sound.mp3',
     ),
@@ -59,7 +59,7 @@ class NumbersPage extends StatelessWidget {
     ),
     Data(
       image: 'assets/images/numbers/number_nine.png',
-      jpName: 'Kyū or Ku',
+      jpName: 'Ku',
       enName: 'Nine',
       sound: 'sounds/numbers/number_nine_sound.mp3',
     ),
@@ -82,7 +82,7 @@ class NumbersPage extends StatelessWidget {
             color: Colors.red,
           ),
           title: const Text(
-            'TOKU ',
+            'Numbers Page  ',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 30,

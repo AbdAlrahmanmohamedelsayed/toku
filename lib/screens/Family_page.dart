@@ -1,8 +1,7 @@
 // [Flutter]: material
 import 'package:flutter/material.dart';
-
 import 'package:toku/Components/item.dart';
-import 'package:toku/models/Number.dart';
+import 'package:toku/models/Model_data.dart';
 
 // ignore: must_be_immutable
 class FamilyPage extends StatelessWidget {
@@ -76,7 +75,7 @@ class FamilyPage extends StatelessWidget {
             color: Colors.red,
           ),
           title: const Text(
-            'TOKU ',
+            'Family Page ',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 30,

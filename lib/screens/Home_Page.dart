@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
       body: GridView(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2, // Number of columns
-          mainAxisSpacing: 5.0, // Spacing between rows
+          mainAxisSpacing: 10.0, // Spacing between rows
           crossAxisSpacing: 10.0, // Spacing between columns
           childAspectRatio: 1.0, // Ratio of width to height for each grid item
         ),
